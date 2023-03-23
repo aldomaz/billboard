@@ -1,0 +1,103 @@
+{
+  "kind": "collectionType",
+  "collectionName": "billboards",
+  "info": {
+    "singularName": "billboard",
+    "pluralName": "billboards",
+    "displayName": "Billboard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "company": {
+      "type": "string"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "billboard"
+    },
+    "low4": {
+      "type": "dynamiczone",
+      "components": [
+        "billboard.news",
+        "billboard.event",
+        "billboard.congrats",
+        "billboard.group-congrats",
+        "billboard.media",
+        "billboard.special-days"
+      ]
+    },
+    "backgroundColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "low3": {
+      "type": "dynamiczone",
+      "components": [
+        "billboard.news",
+        "billboard.event",
+        "billboard.congrats",
+        "billboard.group-congrats",
+        "billboard.special-days",
+        "billboard.media"
+      ]
+    },
+    "low2": {
+      "type": "dynamiczone",
+      "components": [
+        "billboard.news",
+        "billboard.event",
+        "billboard.congrats",
+        "billboard.group-congrats",
+        "billboard.special-days",
+        "billboard.media"
+      ]
+    },
+    "low1": {
+      "type": "dynamiczone",
+      "components": [
+        "billboard.news",
+        "billboard.event",
+        "billboard.congrats",
+        "billboard.group-congrats",
+        "billboard.special-days",
+        "billboard.media"
+      ]
+    },
+    "medium": {
+      "type": "dynamiczone",
+      "components": [
+        "billboard.news",
+        "billboard.event",
+        "billboard.congrats",
+        "billboard.group-congrats",
+        "billboard.special-days",
+        "billboard.media"
+      ]
+    },
+    "principal": {
+      "type": "dynamiczone",
+      "components": [
+        "billboard.news",
+        "billboard.event",
+        "billboard.congrats",
+        "billboard.group-congrats",
+        "billboard.special-days",
+        "billboard.media"
+      ]
+    },
+    "companyLogo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

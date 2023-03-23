@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_global_navigations",
+  "info": {
+    "displayName": "Navigation",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "social_network": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.social-network"
+    }
+  }
+}

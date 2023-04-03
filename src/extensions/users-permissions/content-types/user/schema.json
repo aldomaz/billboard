@@ -64,7 +64,8 @@
       "configurable": false
     },
     "brand": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "billboard": {
       "type": "relation",

@@ -93,8 +93,16 @@
       ]
     },
     "companyLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
+      ]
+    },
+    "fontFamily": {
+      "allowedTypes": [
+        "files"
       ],
       "type": "media",
       "multiple": false
